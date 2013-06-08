@@ -1,0 +1,10 @@
+Leblanc-Cook symbol table 
+More efficient than a stack
+See Scott, supplement, for more details
+Main ideas
+Each scope is assigned a unique serial number.  
+New scopes given new number as they are encountered.  (These numbers do not reflect nesting)
+All identifiers are entered into one hash table with their attributes and scope number.
+The hash table chains entries with the same identifier.
+A separate scope stack records the scopes that belong to the current referencing environment.
+
